@@ -1,0 +1,144 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">  <!--This is html5-->
+<head>
+	<title>Acme Electrical Services</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+	<!-- Optional Bootstrap theme -->
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+	
+	<!-- bootstrap js file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  	<!-- font family -->
+  	<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet"> 
+
+  	<!-- font awesome icons -->
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--ext. css file-->
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/amc.css' %}">
+    <!-- <link rel="stylesheet" type="text/css" href="css/flaticon.css">  -->
+
+</head>
+<body>
+
+
+
+
+	<!-- top nav bar -->
+	<div class="topnav" id="myTopnav">
+		<a href="/" id="logo">Acme Electrical Services</a>
+  		<a href="#" id="fbright"><i class="fa fa-facebook-square" style="font-size: 23px;"></i></a>
+  		<a href="#" id="instaright"><i class="fa fa-instagram" style="font-size: 23px;"></i></a>
+		<a href="#" id="whatsright"><i class="fa fa-whatsapp" style="font-size: 23px;"></i></a>
+
+		<a href="signup.html" id="right">Register</a>
+	  	<a href="login.html" id="right">Login</a>
+		<a href="about.html" id="right">About</a>
+		<a href="contact.html" id="right">Contact Us</a>
+		<a href="services.html" id="right">Services</a>
+		<a href="#" id="right">Download App</a>
+		<!-- <a href="#review">Review</a> -->
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div> 
+
+	<div class="container-fluid servicecont">
+		<div class="row services">
+			<div class="col-md-6 col-sm-12 col-sm-offset-12 introbox">
+				<div class="intro"><h4><span>Electrical<br> AMC Services</span></h4><h4>We Provides:-</h4></div>
+				<!-- <div class="intro"></div> -->
+				<!--<div class="intro">Call Now!</div>
+				<div class="intro ph">+91-82090-35472</div>-->
+				<div class="introb"><button class="sbutton"><span>Home</span></button></div>
+				<div class="introb"><button class="sbutton"><span>Industry</span></button></div>
+				<div class="introb"><button class="sbutton"><span>Hotel/Hospital</span></button></div>
+				<div class="introb"><button class="sbutton"><span>Solar/Wind plant</span></button></div>
+				<div class="introb"><button class="sbutton"><span>Others</span></button></div>
+				
+				
+			</div>
+
+			<div class="col-md-6 amc_info">
+{#				<img src="../static/img/rene.jpg" style="width:100%;">#}
+
+
+			    <h2>W</h2><p>e carry out Electrical AMC services for Home, corporate offices, Industries and commercial buildings. The Electrical AMC services that are offered by our expert team of technicians include all kinds of electrical work such as repairing, Cabling, wiring, installation and Electrical Equipment maintenance. Our electrical technicians are highly trained to take care of any problem without damaging your existing wiring or equipment. <br>
+				If you have a commercial building or office in Bangalore which needs an annual electrical maintenance, we have the best Electrical AMC Provider to hire.<br>
+				We go out of our way to ensure that our clients are satisfied. For all your annual electrical maintenance requirements, get in touch with AMC and we will give you a customized quote.<br>
+				Clients can avail from us all types of Maintenance Services for electrical products. All the Electrical AMC services are executed Our maintenance services are known for reliability, timeliness and cost effectiveness.
+			    <ul>
+				    <li>AMC for Your Home, Office, commercial & Industry.</li>
+				    <li>AMC of Power Factor, Main Panels Etc.</li>
+				    <li>AMC for Circuit Breaker, LT panels, Distribution Board.</li>
+				    <li>AMC for Chiller, firefighting.</li>
+			    </ul>
+            </p>
+
+			</div>
+            <div class="col-md-3 plans">
+                <ul>
+                    <li><h4>HOME:-</h4>
+                        <strong>For 1-BHK-2500Rs/YEAR*</strong><br>
+                        <strong>For 2-BHK-4000Rs/YEAR*</strong><br>
+                    </li><br>
+                    <li><h4>For Industries/Commercial<br>/office</h4>
+                        <strong>Min.-20000/year*</strong><br>
+                    </li><br>
+                    <li><h4>For Hotels/Hospitals</h4>
+                        <strong>Min.-25000/year*</strong><br>
+                    </li><br>
+                    <li><h4>For Solar/Wind plant</h4>
+                        <strong>Min.-30000/year*</strong><br>
+                        <strong>*Condition Apply</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+			
+<!--footer started  -->
+
+	<footer>
+		<div class="container-fluid  footercont">
+
+			<div class="row sources">
+				<a href="#" id="led">LED and Lighting</a>
+				<a href="#" id="switch">Switches and Automobiles</a>
+				<a href="#" id="device">Protection Devices</a>
+				<a href="#" id="power">Power Factor Control</a>
+				<a href="#" id="security">Security System</a>
+				<a href="#" id="solar">Solar Power Plant</a>
+			</div>		
+
+
+
+			<div class="follow">
+				<h1>Follow Us On:-</h1>
+				<a href="#" id="fb"><i class="fa fa-facebook-square"></i></a>
+		  		<a href="#" id="insta"><i class="fa fa-instagram"></i></a>
+				<a href="#" id="whatsapp"><i class="fa fa-whatsapp"></i></a>
+				<a href="#" id="twit"><i class="fa fa-twitter"></i></a>
+			</div>
+			
+
+
+				
+			<p>Copyright © 2017 Acme Services India Pvt. Ltd. All Rights Reserved</p>
+		</div>	
+
+
+	</footer>
+
+
+	<!-- ext. js files -->
+	<script type="text/javascript" src="{% static '../static/js/index.js' %}"></script>
+</body>
+</html>

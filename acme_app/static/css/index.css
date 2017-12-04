@@ -1,0 +1,552 @@
+body {
+  margin: 0;
+  font-size: 9px;
+  font-family: "Open Sans";
+  overflow-x:hidden;
+  transition: background-color .5s;
+}
+
+
+/*top navigation bar*/
+
+.topnav {
+    background-color:  white;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    z-index: 10;
+    box-shadow: 0 2px 2px grey;
+}
+
+/*#myTopnav {*/
+    /*!*height: 200px;*!*/
+    /*background: #33bbff; !* For browsers that do not support gradients *!*/
+    /*background: -webkit-linear-gradient(left, #0099e6 , #99ddff); !* For Safari 5.1 to 6.0 *!*/
+    /*background: -o-linear-gradient(right, #0099e6, #99ddff); !* For Opera 11.1 to 12.0 *!*/
+    /*background: -moz-linear-gradient(right, #0099e6, #99ddff); !* For Firefox 3.6 to 15 *!*/
+    /*background: linear-gradient(to right, #0099e6 , #99ddff); !* Standard syntax (must be last) *!*/
+/*}*/
+
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 40px 16px 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#logo{
+    float:left;
+    padding: 10px 0 10px 0;
+    margin-left:200px;
+    text-align: justify;
+    width:300px;
+}
+#logo img{
+    width:300px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    /*background-color: #0088cc;*/
+    color: red;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+} 
+
+#right, #fbright, #instaright, #whatsright{
+  float:right;
+}
+
+
+#fbright:hover{
+  color:#3B5998;
+  /*background-color: #0088cc;*/
+}
+
+#instaright:hover{
+  color: #e95950;
+  /*background-color: #0088cc;*/
+}
+
+#whatsright:hover{
+  color:#4dc247;
+  /*background-color: #0088cc;*/
+}
+
+/* sticky navabar*/
+/*.sticky {*/
+  /*position: fixed;*/
+  /*top: 0;*/
+  /*width: 100%*/
+/*}*/
+
+/*.sticky + .servicecont{*/
+    /*padding-top: 30px;*/
+/*}*/
+/*sticky ends here*/
+
+
+/*main block*/
+.servicecont{
+  padding-top:100px;
+  /*margin:0 auto;*/
+}
+
+ 
+/*.services{
+  padding: 30px;  
+}*/
+
+/*left-side box*/
+.introbox{
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color:#000;
+  max-width: 300px;
+  font-family: "Lato";
+  height: 500px;
+  margin-left: 80px;
+  /*margin:0 auto;*/
+}
+.intro{
+  font-size: 22px;
+  font-weight: bold;
+  padding:5px 0 0 0;
+  text-align: center;
+}
+.intro span{
+  font-size: 26px;
+  color:#f20d0d;
+}
+/*.intro .ph{
+  font-weight: bold;
+  text-align: center;
+}*/
+.introb{
+  padding:10px 0 0 0;
+  text-align: center;
+}
+
+
+/*service buttons*/
+.sbutton {
+  border-radius: 12px;
+  background-color: #0088cc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 190px;
+  transition: all 0.5s;
+  cursor: pointer;
+  /*margin: 5px;*/
+}
+
+.sbutton:hover{
+  background-color:#f20d0d;
+}
+
+.sbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sbutton:hover span {
+  padding-right: 25px;
+}
+
+.sbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #a6a6a6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:#f20d0d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .3s;
+    /*padding: 16px;*/
+}
+
+
+
+#myCarousel{
+  margin:0 0.2px 0 0.2px;
+}
+#myCarousel img{
+  height:500px; 
+}
+
+
+/*contact form*/
+input[type=text], select ,input[type=number],input[type=email], input[type=tel]{
+    width: 100%;
+    /*padding: 12px;*/
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 22px;
+    resize: vertical;
+}
+
+/*input[type=text], select ,input[type=email], input[type=tel]{*/
+    /*width: 100%;*/
+    /*padding: 12px;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
+    /*margin-top: 6px;*/
+    /*margin-bottom: 16px;*/
+    /*resize: vertical;*/
+/*}*/
+/*.info {*/
+    /*width: 100%;*/
+    /*padding: 12px;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
+    /*margin-top: 6px;*/
+    /*margin-bottom: 16px;*/
+    /*resize: vertical;*/
+/*}*/
+input[type=submit] {
+    /*text-align: center;*/
+    background-color: #000;
+    color: white;
+    margin-top:10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type=submit]:hover {
+    background-color: blue;
+}
+
+.contactbox {
+    text-align:center;
+    margin:0 auto;  
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    max-width: 300px;
+    height:500px;
+    font-size: 15px;
+    /*max-width: 350px;*/
+}
+
+
+/**/
+/**/
+/* Side Navigation Popup Forms*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	text-align:center;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 5px;
+    background-color: #a6a6a6 ;
+    color: white;
+}
+
+.modal-body {padding: 5px;}
+
+
+
+.modal-body input, textarea {
+  margin: .8em auto;
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: 13px;
+  display: block;
+  width: 280px;
+  padding: .4em;
+}
+
+.modal-body textarea { height: 80px; resize: none; }
+
+.formBtn {
+  width: 140px;
+  display: inline-block;
+  background: blue;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 40px;
+}
+/**/
+/**/
+
+
+/*#form{*/
+    /*display:block;*/
+/*}*/
+ /**/
+/*#after_form{*/
+    /*display:none;*/
+    /*width: 100%;*/
+    /*padding: 12px;*/
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
+    /*margin-top: 6px;*/
+    /*margin-bottom: 16px;*/
+    /*resize: vertical;*/
+/*}*/
+
+footer{
+  max-height: 600px;
+  /*max-width: 1700px;*/
+  background-color: #333333;
+  margin-top:auto;
+  bottom: 0;
+  width: 100%;
+
+
+}
+.follow{
+  /*float: right;*/
+  color: #fff;
+  /*padding-right: 40px;*/
+  /*padding-top: -50px;*/
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.icons{
+
+  display: inline;
+  /*font-size: 60px;*/
+  padding: 20px;
+}
+
+.icon:hover{
+  color: #f01b3b;
+}
+
+.icon .nico{
+  height:200px;
+}
+.iconi{
+  /*height: 100px;*/
+  font-size: 20px;
+}
+
+footer p{
+  font-size: 20px;
+  color: #fff;
+  /*margin-top: 300px;*/
+  text-align: center;
+
+}
+footer a{
+  font-size: 20px;
+  padding:10px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.sources{
+    margin-left: 90px;
+    /*padding: 20px;*/
+    /*padding-right: 40px;*/
+}
+/* Style the links inside the navigation bar */
+.sources a {
+    float: left;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /*padding: 20px;*/
+    margin-right: 30px;
+}
+
+/* Change the color of links on hover */
+.sources a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#fb:hover{
+  color: #3B5998;
+}
+#insta:hover{
+  color: #e95950;
+}
+#whatsapp:hover{
+  color: #4dc247
+
+}
+#twit:hover{
+  color: #55acee
+
+}
+
+
+
+
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  #right, #fbright, #instaright, #whatsright{
+    float:none;
+  }
+  .introbox, .contactbox{
+    /*max-width: 600px;*/
+    text-align: center;
+    float: none;
+    /*max-width: 300px;*/
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .sources{
+    margin:0 auto;
+  }
+  .sources a{
+    display: block;
+    float: none;
+  }
+
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+

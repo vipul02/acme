@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acme Electrical Services</title>
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Noto+Sans|Bellefair|Titillium+Web" rel="stylesheet">
+
+    <!-- for ext. css file -->
+    <link rel="stylesheet" type="text/css" href="{% static '../static/css/success.css' %}"/>
+    <script type="text/javascript">
+        function redirect(){
+            window.location.href = "login/";
+        }
+        setTimeout(redirect, 3000); //3000 is equivalent to 3 seconds
+    </script>
+</head>
+<body>
+	<div class="container-fluid" id="success">
+        Successfully signed up! Please continue to login!
+        You will be redirected to login page in 3 seconds....if not click on login
+        <form action="/login" method="get">
+            <input type="submit" class="btn btn-default" value="Login">
+        </form>
+    </div>
+</body>
+</html>

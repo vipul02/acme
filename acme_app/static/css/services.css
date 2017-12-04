@@ -1,0 +1,343 @@
+body {
+  margin: 0;
+  font-size: 9px;
+  font-family: "Open Sans";
+}
+
+
+/*top navigation bar*/
+ /* Add a black background color to the top navigation */
+.topnav {
+    //background-color:  #33bbff;
+    overflow: hidden;
+    /*position: fixed; !* Set the navbar to fixed position *!*/
+    /*top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 5;
+}
+
+#myTopnav {
+    /*height: 200px;*/
+    background: #33bbff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0099e6 , #99ddff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0099e6, #99ddff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0099e6, #99ddff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0099e6 , #99ddff); /* Standard syntax (must be last) */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #0088cc;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+#right, #fbright, #instaright, #whatsright{
+  float:right;
+}
+
+
+#fbright:hover{
+  /*color:#3B5998;*/
+  background-color: #0088cc;
+}
+
+#instaright:hover{
+  /*color: #e95950;*/
+  background-color: #0088cc;
+}
+
+#whatsright:hover{
+  /*color:#4dc247;*/
+  background-color: #0088cc;
+}
+
+/* sticky navabar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .servicecont{
+    padding-top: 30px;
+}
+/*sticky ends here*/
+
+
+
+
+
+
+/*main block*/
+.servicecont{
+  padding: 80px 40px 0 110px;
+}
+
+#shead{
+  margin: 10px 0 20px 0;
+  text-align: center;
+
+}
+
+.introb{
+  padding:5px 0 20px 7px;
+}
+
+.servicecont .serviceb{
+  margin-top: 50px;
+}
+
+.serviceb{
+  padding:10px 0 0px 0px;
+  text-align: center;
+}
+
+
+/*service buttons*/
+.sbutton {
+  border-radius: 20px;
+  background-color: #0099e6;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  height: 100px;
+  width: 250px;
+  transition: all 0.5s;
+  /*cursor: pointer;
+  /*margin: 5px;*/
+}
+
+.sbutton:hover{
+  background-color: #ff5722;
+}
+
+.sbutton span {
+  /*cursor: pointer;*/
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.sbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: -20px;
+  transition: 0.5s;
+}
+
+.sbutton:hover span {
+  padding-right: 25px;
+}
+
+.sbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#one:hover {
+  background-color: #d500f9;
+}
+
+#two:hover {
+  background-color: #37474f ;
+}
+
+#four:hover{
+    background-color: #f20d0d;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a6a6a6;
+    /*background-color: rgba(0,0,0, 0.9);*/
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin: 16px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f20d0d;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 36px;
+}
+
+
+
+
+
+
+footer{
+  max-height: 800px;
+  /*max-width: 1700px;*/
+  background-color: #333333;
+  margin-top:90px;
+  bottom: 0;
+  width: 100%;
+
+
+}
+.follow{
+  /*float: right;*/
+  color: #fff;
+  /*padding-right: 40px;*/
+  /*padding-top: -50px;*/
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.icons{
+
+  display: inline;
+  /*font-size: 60px;*/
+  padding: 20px;
+}
+
+.icon:hover{
+  color: #f01b3b;
+}
+
+.icon .nico{
+  height:200px;
+}
+.iconi{
+  /*height: 100px;*/
+  font-size: 20px;
+}
+
+footer p{
+  font-size: 20px;
+  color: #fff;
+  /*margin-top: 300px;*/
+  text-align: center;
+
+}
+footer a{
+  font-size: 20px;
+  padding:10px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.sources{
+    margin-left: 40px;
+    padding: 20px 0 20px 0;
+}
+/* Style the links inside the navigation bar */
+.sources a {
+    float: left;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    /*padding: 20px;*/
+    margin-right: 30px;
+}
+
+/* Change the color of links on hover */
+.sources a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+#fb:hover{
+  color: #3B5998;
+}
+#insta:hover{
+  color: #e95950;
+}
+#whatsapp:hover{
+  color: #4dc247
+
+}
+#twit:hover{
+  color: #55acee
+
+}
+
+
+
+
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+ /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  #right, #fbright, #instaright, #whatsright{
+    float:none;
+  }
+
+  .sources{
+    margin:0 auto;
+  }
+  .sources a{
+    display: block;
+    float: none;
+  }
+
+}
+
+
